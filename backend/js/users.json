@@ -1,0 +1,29 @@
+[
+  {  "id": 1,
+    "user":"user1",
+     "name" : "Janis",
+	  "password" : "Janis",
+	  "email" : "janis@gmail.com",
+    "address": "Juglas iela 2",
+    "country": "Latvia"
+
+   },
+   {  "id": 2,
+     "user":"user2",
+      "name" : "Maris",
+ 	  "password" : "Maris",
+ 	  "email" : "Maris@gmail.com",
+     "address": "Juglas iela 4",
+     "country": "Latvia"
+
+    },
+    {  "id": 3,
+      "user":"user3",
+       "name" : "Anna",
+  	  "password" : "Anna",
+  	  "email" : "Anna@gmail.com",
+      "address": "Juglas iela 3",
+      "country": "Latvia"
+
+     }
+]

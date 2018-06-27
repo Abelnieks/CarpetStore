@@ -1,0 +1,41 @@
+{{outlet}}
+<div class="jumbo">
+	<div class="whiskerColor">
+	  <h2>Paklāji</h2>
+	  <p>Cerams atradīsiet meklēto paklāju mūsu veikalā</p> <br/>
+
+<div>
+		{{input value=Name placeholder="id"}}
+		<button  {{action 'filtername'}}>Meklēt</button>
+	</div>
+		  {{#each model as |carpet|}}
+
+
+  	<article class="listing">
+    <h4>{{carpet.name}}</h4>
+    <div class="detail">
+      <span>Cena:</span> {{carpet.price}} Eur
+    </div>
+    <div class="detail">
+      <span>Materiāls:</span> {{carpet.material}}
+    </div>
+    <div class="detail type">
+      <span>Izmērs:</span> {{carpet.size}}
+    </div>
+		<div class="detail type">
+      <button {{action 'deletecarpet' carpet}}>Delete</button>
+    </div>
+		<div class="detail type">
+      <button {{action 'updatecarpet' carpet}}>Mainīt</button>
+    </div>
+	<div class="right"><img src="{{carpet.url}}" height="100" width="100"></div>
+</article>
+
+    <br>
+  {{/each}}
+
+  </div>
+
+
+
+</div>
